@@ -1,0 +1,87 @@
+=================================================================
+STUDENT PERFORMANCE ANALYTICS SYSTEM
+=================================================================
+
+1. DATASET OVERVIEW
+Number of students: 20
+Number of subjects: 5
+Departments: CSE, ECE, EEE, IT
+
+Dataset information:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 20 entries, 0 to 19
+Data columns (total 9 columns):
+ #   Column           Non-Null Count  Dtype 
+---  ------           --------------  ----- 
+ 0   Student_ID       20 non-null     int64 
+ 1   Name             20 non-null     object
+ 2   Department       20 non-null     object
+ 3   Python           20 non-null     int64 
+ 4   Mathematics      20 non-null     int64 
+ 5   Physics          20 non-null     int64 
+ 6   English          20 non-null     int64 
+ 7   Data_Structures  20 non-null     int64 
+ 8   Attendance       20 non-null     int64 
+dtypes: int64(7), object(2)
+memory usage: 1.5+ KB
+
+2. STUDENT PERFORMANCE RESULTS
+ Student_ID           Name Department  Python  Mathematics  Physics  English  Data_Structures  Total  Average Grade Result  Attendance
+        101  C.M.Prathibha        CSE      98           95       94       96               97    480     96.0    A+   Pass          97
+        102   C.Thejaswini        CSE      95           93       92       94               96    470     94.0    A+   Pass          95
+        103      S.Revathi        CSE      93           91       90       92               94    460     92.0    A+   Pass          93
+        104      E.Shruthi        ECE      91           89       88       90               93    451     90.2    A+   Pass          94
+        105   A.Divya Sree        CSE      72           66       70       75               68    351     70.2     B   Pass          85
+        106    M.Jagadeesh        ECE      58           52       49       60               55    274     54.8     D   Pass          74
+        107    C.M.Lakshmi        CSE      83           78       80       82               85    408     81.6     A   Pass          91
+        108 C.M.Navya Sree         IT      69           63       61       70               66    329     65.8     C   Pass          83
+        109    K.Sai Kiran         IT      45           38       42       55               40    220     44.0     F   Fail          68
+        110    P.Harshitha        ECE      88           82       85       80               90    425     85.0     A   Pass          90
+        111    R.Venkatesh        CSE      55           48       52       62               50    267     53.4     D   Pass          77
+        112       B.Anusha         IT      79           74       71       83               77    384     76.8     B   Pass          89
+        113      N.Karthik        EEE      62           55       58       66               60    301     60.2     C   Pass          79
+        114      T.Mounika        EEE      85           80       77       84               82    408     81.6     A   Pass          92
+        115       G.Rajesh        ECE      38           42       45       50               41    216     43.2     F   Fail          62
+        116      V.Sravani         IT      70           68       64       74               71    347     69.4     C   Pass          86
+        117  D.Manoj Kumar        EEE      52           47       50       58               49    256     51.2     D   Pass          72
+        118      L.Bhavana        CSE      81           76       78       79               80    394     78.8     B   Pass          90
+        119 Y.Pavan Kalyan        ECE      67           60       63       69               64    323     64.6     C   Pass          80
+        120      S.Nandini         IT      84           80       83       86               82    415     83.0     A   Pass          89
+
+3. OVERALL PERFORMANCE ANALYSIS
+Highest average: C.M.Prathibha - 96.0
+Lowest average: G.Rajesh - 43.2
+Class average: 71.79
+Students passed: 18
+Students failed: 2
+Pass percentage: 90.0 %
+
+Students who failed:
+- K.Sai Kiran
+- G.Rajesh
+
+4. SUBJECT-WISE PERFORMANCE ANALYSIS
+        Subject  Average  Highest  Lowest
+         Python    73.25       98      38
+    Mathematics    68.85       95      38
+        Physics    69.60       94      42
+        English    75.25       96      50
+Data_Structures    72.00       97      40
+Best-performing subject: English
+
+5. TOP PERFORMING STUDENTS
+Rank 1: C.M.Prathibha | Department: CSE | Total: 480 | Average: 96.0 | Grade: A+
+Rank 2: C.Thejaswini | Department: CSE | Total: 470 | Average: 94.0 | Grade: A+
+Rank 3: S.Revathi | Department: CSE | Total: 460 | Average: 92.0 | Grade: A+
+
+6. ATTENDANCE ANALYSIS
+Average attendance: 84.3 %
+Students with attendance below 75%:
+- M.Jagadeesh - 74 %
+- K.Sai Kiran - 68 %
+- G.Rajesh - 62 %
+- D.Manoj Kumar - 72 %
+
+=================================================================
+ANALYSIS COMPLETED SUCCESSFULLY
+=================================================================
