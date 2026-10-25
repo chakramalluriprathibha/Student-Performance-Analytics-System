@@ -1,69 +1,142 @@
 # Student Performance Analytics System
 
 **Student:** C.M. Prathibha  
-**Project:** Python with AI — Student Performance Analytics System
+**Project:** Python Mini Project — Student Performance Analytics System
 
-## Objective
+## 1. Objective
 
-To analyse student marks and attendance using Python, NumPy, and Pandas. The program calculates total marks, average marks, grades, pass/fail results, overall performance, subject-wise performance, top performers, and attendance analysis.
+To analyse student marks and attendance using Python, NumPy, and Pandas. The program calculates total marks, average marks, grades, pass/fail results, overall class performance, subject-wise performance, top-performing students, and attendance analysis.
 
-## Technologies Used
+## 2. Technologies Used
 
 - Python
 - NumPy
 - Pandas
-- CSV dataset
-- GitHub
+- CSV Dataset
+- Git and GitHub
+- Visual Studio Code
 
-## Project Files
+## 3. Project Files
 
-- `main.py` — Python source code
-- `students.csv` — dataset containing 20 student records
-- `sample_output.txt` — sample program output
-- `Project_Documentation.md` — project report
-- `requirements.txt` — required Python packages
-- `screenshots/` — project output screenshots
+```text
+Student-Performance-Analytics-System/
+│
+├── main.py
+├── students.csv
+├── requirements.txt
+├── README.md
+├── Project_Documentation.md
+├── sample_output.txt
+└── screenshots/
+    ├── performance_analysis.png
+    └── students_results.png.png
+```
 
-## Dataset
+## 4. Dataset Description
 
-The dataset contains Student ID, Name, Department, marks in Python, Mathematics, Physics, English, and Data Structures, along with Attendance.
+The project uses `students.csv`, which contains 20 student records.
 
-## Grading Rules
+The dataset includes:
 
-A student passes only when every subject mark is at least 40. A failed student receives grade `F`.
+- Student ID
+- Student Name
+- Department
+- Python marks
+- Mathematics marks
+- Physics marks
+- English marks
+- Data Structures marks
+- Attendance percentage
 
-For students who pass:
+## 5. Features
 
-- A+: Average of 90 or above
-- A: Average of 80 to below 90
-- B: Average of 70 to below 80
-- C: Average of 60 to below 70
-- D: Average below 60
+- Reads student data from a CSV file using Pandas.
+- Calculates total and average marks using NumPy.
+- Assigns grades based on student performance.
+- Identifies pass and fail students.
+- Calculates the overall class average and pass percentage.
+- Displays the highest and lowest student averages.
+- Performs subject-wise performance analysis.
+- Identifies the best-performing subject.
+- Displays the top three performing students.
+- Analyses student attendance and identifies students with attendance below 75%.
+- Checks for missing columns, invalid marks, and invalid attendance values.
 
-## Setup and Run
+## 6. Grading Rules
 
-1. Install Python 3 from https://www.python.org/downloads/
-2. Open a terminal in the project folder.
-3. Install the required packages:
+A student passes only when every subject mark is at least 40. If any subject mark is below 40, the student's result is **Fail** and the grade is **F**.
 
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
+For students who pass, grades are assigned according to their average marks:
 
-4. Run the program:
+| Average Marks | Grade | Result |
+|---|---|---|
+| 90 and above | A+ | Pass |
+| 80 to below 90 | A | Pass |
+| 70 to below 80 | B | Pass |
+| 60 to below 70 | C | Pass |
+| Below 60 | D | Pass |
 
-   ```bash
-   python main.py
-   ```
+## 7. Installation and Execution
 
-## Project Outcome
+### Step 1: Install Python
 
-The project displays student-wise results, calculates overall class performance, compares subject averages, identifies the top three students, and analyses attendance.
+Download and install Python 3 from the official website:
 
-## Screenshots
+https://www.python.org/downloads/
 
-Screenshots of student results and performance analysis are saved in the `screenshots/` folder.
+### Step 2: Open the Project Folder
 
-## GitHub Submission
+Open the project folder in Visual Studio Code and open its terminal.
 
-After uploading the project to GitHub, submit the repository link through the college Google Form as instructed.
+### Step 3: Install Required Packages
+
+Run the following command:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### Step 4: Run the Program
+
+Execute the Python program using:
+
+```bash
+python main.py
+```
+
+The program reads `students.csv`, validates the dataset, and displays the student performance analysis in the terminal.
+
+## 8. Sample Output
+
+The program displays:
+
+- Dataset overview
+- Student-wise marks, totals, averages, grades, and results
+- Overall class performance
+- Pass and fail statistics
+- Subject-wise averages, highest marks, and lowest marks
+- Best-performing subject
+- Top three performing students
+- Attendance analysis
+
+The complete sample output is available in `sample_output.txt`.
+
+## 9. Screenshots
+
+The `screenshots/` folder contains screenshots of the student results and performance analysis generated by the program.
+
+## 10. Project Outcome
+
+This project demonstrates the use of Python, NumPy, and Pandas to analyse student academic performance. It helps calculate marks, assign grades, identify top performers, compare subject averages, and analyse attendance.
+
+## 11. GitHub Repository
+
+**Project Repository:**  
+[Student Performance Analytics System — View on GitHub](https://github.com/chakramalluriprathibha/Student-Performance-Analytics-System)
+
+**Repository URL:**  
+https://github.com/chakramalluriprathibha/Student-Performance-Analytics-System
+
+## 12. Submission
+
+The GitHub repository link is provided above for project submission and reference.
